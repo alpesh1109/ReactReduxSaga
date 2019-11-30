@@ -69,8 +69,7 @@ Login.propTypes = {
   emp: PropTypes.array.isRequired
 };
 const mapStateToProps = state => ({
-  // ...state
   emp: state.user.result
 })
-//Alpesh
+
 export default connect(mapStateToProps, { simpleAction })(Login);

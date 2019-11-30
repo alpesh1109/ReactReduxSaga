@@ -35,16 +35,18 @@ class Note extends React.Component {
         var body = this.state.body;
 
         if (noteid !== '') {
-            let index = tempd.findIndex(x => x.title === notetit);
+            if (title !== '' && body !== '') {
+                let index = tempd.findIndex(x => x.title === notetit);
 
-            tempd[index].title = title;
-            tempd[index].body = body;
+                tempd[index].title = title;
+                tempd[index].body = body;
 
-            this.setState({
-                notedata: tempd,
-                title: '',
-                body: ''
-            });
+                this.setState({
+                    notedata: tempd,
+                    title: '',
+                    body: ''
+                });
+            }
         }
         else {
             const { note } = this.props;
