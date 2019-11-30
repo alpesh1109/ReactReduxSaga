@@ -1,0 +1,15 @@
+.avtar{height: 40px;width: 40px;}
+.avtar .rsc-ts-image {box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px;height: 40px;min-width: 40px;transform: scale(0);transform-origin: right bottom;animation: 0.3s ease 0s 1 normal forwards running Lmuha;border-radius: 50% 50%;padding: 3px;}
+.leftchat .avtar{margin-right:15px;}
+.chattextbox{box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px;max-width: 60%;display: inline-block;font-size: 14px;position: relative;transform-origin: left bottom;animation: 0.3s ease 0s 1 normal forwards running Lmuha;border-radius: 4px 4px 4px 4px;margin: 0px 0px 5px;padding: 12px;}
+.chattextbox.leftchatbox{color: rgb(0, 0, 0);background: rgb(255, 255, 255);}
+.chattextbox.leftchatbox::after{content:''; height:25px; width:25px; background: rgb(255, 255, 255);position: absolute;transform: rotate(45deg);bottom: 10px;left: -5px}	
+.chattextbox span{position: relative;z-index: 1;}
+.rightchat{padding-top:5px;}
+.rightchat .avtar{margin-left:15px;}
+.chattextbox.rightchatbox{color: rgb(255, 255, 255);background: rgb(32, 109, 223);}
+.chattextbox.rightchatbox::after{content:''; height:25px; width:25px; background: rgb(32, 109, 223);position: absolute;transform: rotate(45deg);bottom: 10px;right: -5px}
+.chattextbox.none-arrow::after{height:0; width:0;}
+.autosujection{max-width: 100%; overflow-x:auto;white-space: nowrap;}
+.suject-btn{color:#206DDF; border:1px solid #206DDF; border-radius:30px;font-size: 14px; padding:8px 20px;}
+.suject-btn.selectd{color:#ffffff; background-color:#206DDF;}
