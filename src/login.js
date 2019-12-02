@@ -26,10 +26,12 @@ class Login extends React.Component {
   handleSubmit = (event) => {
     var email = this.state.email;
     var password = this.state.pwd;
-    this.props.simpleAction(email, password);
-    this.setState({
-      flag: true
-    })
+    if(email !== '' && password !== ''){
+      this.props.simpleAction(email, password);
+      this.setState({
+        flag: true
+      })
+    }
     event.preventDefault();
   }
   render() {
