@@ -1,20 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
+ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
-import configureStore from './store';
+import store from './store';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Login from '../src/login';
-import Note from '../src/note';
+
 
 
 ReactDOM.render(<BrowserRouter forceRefresh={false}>
-  <Provider store={configureStore()}>
+  <Provider store={store}>
     <Switch>
-      <Route exact path="/Note" component={Note} />
-      <Route exact path="/" component={Login} />
+      {/* <Route exact path="/Note" component={Note} /> */}
+      <Route exact path="/" component={App} />
     </Switch>
   </Provider>,
     </BrowserRouter>, document.getElementById('root')
